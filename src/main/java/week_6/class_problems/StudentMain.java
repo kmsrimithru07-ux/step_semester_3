@@ -1,0 +1,34 @@
+package main.java.week_6.class_problems;
+
+class Student {
+    String name;
+    double attendance;
+
+    static String collegeName =
+            "SRM Institute of Science and Technology";
+
+    static int studentCount = 0;
+
+    Student(String name, double attendance) {
+        this.name = name;
+        this.attendance = attendance;
+        studentCount++;
+    }
+
+    static void printCollegeInfo() {
+        System.out.println(collegeName);
+        System.out.println("Students created: " + studentCount);
+    }
+}
+
+public class StudentMain {
+    public static void main(String[] args) {
+
+        Student s1 = new Student("Ravi", 90);
+        Student s2 = new Student("Anitha", 85);
+
+        System.out.println("2 Student objects created");
+
+        Student.printCollegeInfo();
+    }
+}
