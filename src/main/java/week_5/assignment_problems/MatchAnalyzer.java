@@ -41,6 +41,7 @@ public class MatchAnalyzer {
                 {4, 6, 8},
                 {10, 12, 14},
                 {2, 3, 1}
+
         };
 
         System.out.println(
